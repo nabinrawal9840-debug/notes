@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Access Pokhara University study materials via Google Drive and OneDrive links. Direct download links for BE Computer, BE Civil, BCA, BBA notes, projects, and past papers shared by students.">
+     <meta name="keywords" content="
+        Pokhara University Google Drive,
+        Pokhara University OneDrive,
+        engineering notes drive links,
+        study materials Google Drive,
+        free drive links for notes,
+        Pokhara University drive collection,
+        computer engineering drive,
+        civil engineering drive,
+        BCA notes drive,
+        BBA notes drive,
+        student shared drives,
+        direct download links,
+        cloud storage study materials,
+        Pokhara University resources drive,
+        Nepal engineering drives
+    ">
+       <meta name="author" content="Nabin Rawal - Pokhara University Drives">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://notespokharauniversity.nabinrawal207.com.np/onedrive.html">
+    <meta property="og:title" content="Pokhara University Study Materials Drive Links">
+    <meta property="og:description" content="Direct Google Drive & OneDrive links for Pokhara University study materials. Download notes, projects, past papers from student-shared drives.">
+    <meta property="og:image" content="https://notespokharauniversity.nabinrawal207.com.np/logo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://notespokharauniversity.nabinrawal207.com.np/onedrive.html">
+    <meta property="twitter:title" content="Pokhara University Study Materials Drive Links">
+    <meta property="twitter:description" content="Direct Google Drive & OneDrive links for Pokhara University study materials.">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://notespokharauniversity.nabinrawal207.com.np/onedrive.html">
+    <title>Drives List | Pokhara University Notes</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Main container */
+        .materials-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Hero section */
+        .materials-hero {
+            background: linear-gradient(135deg, #1a1b30 0%, #2d2e50 100%);
+            padding: 50px 30px;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .materials-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: #ff6b35;
+        }
+
+        .materials-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: rgb(255, 255, 255);
+        }
+
+        .materials-hero p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+        }
+
+        /* Cloud Storage Sections */
+        .cloud-storage-section {
+            margin: 50px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .section-title i {
+            color: #ff6b35;
+        }
+
+        /* Button Grid Layout */
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        /* Small Button Style */
+        .drive-btn {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            padding: 25px 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #1a1b30;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 150px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .drive-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            border-color: #ff6b35;
+        }
+
+        .drive-icon {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            color: #1a1b30;
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f9fa;
+        }
+
+        .drive-btn.gdrive .drive-icon {
+            background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+            color: white;
+        }
+
+        .drive-btn.onedrive .drive-icon {
+            background: linear-gradient(135deg, #0078d4 0%, #00bcf2 100%);
+            color: white;
+        }
+
+        .drive-number {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .drive-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1b30;
+            margin-bottom: 8px;
+        }
+
+        .drive-subtitle {
+            font-size: 0.85rem;
+            color: #666;
+            text-align: center;
+            line-height: 1.4;
+            max-width: 140px;
+        }
+
+        /* Status Badge */
+        .status-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        .status-badge.active {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-badge.inactive {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        /* Info Section */
+        .info-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .info-section h2 {
+            color: #1a1b30;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .info-section p {
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .info-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .info-item h3 {
+            color: #1a1b30;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .info-item p {
+            color: #666;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .materials-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .materials-hero p {
+                font-size: 1rem;
+            }
+            
+            .button-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .drive-btn {
+                min-height: 130px;
+                padding: 20px 10px;
+            }
+            
+            .drive-icon {
+                font-size: 1.8rem;
+                width: 50px;
+                height: 50px;
+            }
+            
+            .info-section {
+                padding: 30px 20px;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .materials-hero {
+                padding: 30px 20px;
+            }
+            
+            .button-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .drive-btn {
+                min-height: 120px;
+            }
+            
+            .drive-title {
+                font-size: 1rem;
+            }
+            
+            .drive-subtitle {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="profile-log">
+                <img src="logo.png" alt="Pokhara University Notes Logo" class="logo">
+                <div><a href="index.html" class="tittle">Pokhara University Notes⬅️</a></div>
+            </div>
+            <ul> 
+                <li><a href="becomputer.html">BE Computer</a></li>
+                <li><a href="becivil.html">BE Civil</a></li>
+                <li><a href="bca.html">BCA</a></li>
+                <li><a href="bba.html">BBA</a></li>
+                <li><a href="onedrive.html" class="active">Drives</a></li>
+            </ul>
+            <ul> 
+                <li><a href="index.html">Home</a></li>
+             
+               
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="materials-hero">
+            <div class="materials-icon">
+                <i class="fas fa-cloud-download-alt"></i>
+            </div>
+            <h1>Computer Engineering</h1>
+            <p>Access study materials from multiple Google Drive and OneDrive accounts shared by friends and classmates.</p>
+        </section>
+
+        <!-- Main Container -->
+        <div class="materials-container">
+            
+            <!-- Google Drive Section -->
+            <div class="cloud-storage-section">
+                <h2 class="section-title">
+                    <i class="fab fa-google-drive"></i>
+                    Google Drive Links
+                </h2>
+                
+                <div class="button-grid">
+                    <!-- Google Drive 1 -->
+                    <a href="https://drive.google.com/drive/folders/1dBWrIUEDpwnZAlu02pILLEFJYnN3TXju?usp=drive_link" target="_self" class="drive-btn gdrive">
+                        <div class="status-badge active">Active</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 1</div>
+                        <div class="drive-title">Prashant Bhatta Drive</div>
+                        <div class="drive-subtitle">Complete notes collection</div>
+                    </a>
+
+                    <!-- Google Drive 2 -->
+                    <a href="https://drive.google.com/drive/folders/10Nqkm6BHrV4kELBDcvrlgwD0QQ2S9R5T?usp=drive_link" target="_self" class="drive-btn gdrive">
+                        <div class="status-badge active">Active</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 2</div>
+                        <div class="drive-title"> Samisa Drive</div>
+                        <div class="drive-subtitle">Past papers & solutions</div>
+                    </a>
+
+                    <!-- Google Drive 3 -->
+                    <a href="https://drive.google.com/drive/folders/1Tr8qSw0aYpu6UQXcalnMEVCpRSCU-LbE?usp=drive_link" target="_self" class="drive-btn gdrive">
+                        <div class="status-badge active">Active</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 3</div>
+                        <div class="drive-title">Bikram's Drive</div>
+                        <div class="drive-subtitle">Project reports & code</div>
+                    </a>
+
+                    <!-- Google Drive 4 -->
+                    <a href="https://discord.gg/AFncxa6jn" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active">Active</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">Discord </div>
+                        <div class="drive-title">Nabin's Drive</div>
+                        <div class="drive-subtitle">Lab manuals & practicals</div>
+                    </a>
+
+                    <!-- Google Drive 5 -->
+                    <a href="https://drive.google.com/drive/folders/5YZA567BCD890" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active">empty</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 5</div>
+                        <div class="drive-title">Class Group Drive</div>
+                        <div class="drive-subtitle">Shared class materials</div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- OneDrive Section -->
+            <div class="cloud-storage-section">
+                <h2 class="section-title">
+                    <i class="fab fa-microsoft"></i>
+                    OneDrive Links
+                </h2>
+                
+                <div class="button-grid">
+                    <!-- OneDrive 1 -->
+                    <a href="https://onedrive.live.com/?id=123ABC456DEF" target="_blank" class="drive-btn onedrive">
+                        <div class="status-badge active">empty</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="drive-number">ONEDRIVE 1</div>
+                        <div class="drive-title">Nabin's OneDrive</div>
+                        <div class="drive-subtitle">Complete backup 2024</div>
+                    </a>
+
+                    <!-- OneDrive 2 -->
+                    <a href="https://onedrive.live.com/?id=789XYZ012UVW" target="_blank" class="drive-btn onedrive">
+                        <div class="status-badge active">empty</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="drive-number">ONEDRIVE 2</div>
+                        <div class="drive-title">Dinesh's Backup</div>
+                        <div class="drive-subtitle">Archive collection</div>
+                    </a>
+
+                    <!-- OneDrive 3 -->
+                    <a href="https://onedrive.live.com/?id=345MNO678PQR" target="_blank" class="drive-btn onedrive">
+                        <div class="status-badge active">empty</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="drive-number">ONEDRIVE 3</div>
+                        <div class="drive-title">Bikram's Storage</div>
+                        <div class="drive-subtitle">Project files backup</div>
+                    </a>
+
+                    <!-- OneDrive 4 -->
+                    <a href="https://onedrive.live.com/?id=901STU234VWX" target="_blank" class="drive-btn onedrive">
+                        <div class="status-badge active">empty</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="drive-number">ONEDRIVE 4</div>
+                        <div class="drive-title">Suman's Archive</div>
+                        <div class="drive-subtitle">Old papers collection</div>
+                    </a>
+
+                    <!-- OneDrive 5 -->
+                    <a href="https://onedrive.live.com/?id=567YZA890BCD" target="_blank" class="drive-btn onedrive">
+                        <div class="status-badge inactive">empty</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="drive-number">ONEDRIVE 5</div>
+                        <div class="drive-title">Group Storage</div>
+                        <div class="drive-subtitle">Class shared files</div>
+                    </a>
+                </div>
+            </div>
+            <!-- Hero Section -->
+        <section class="materials-hero">
+            <div class="materials-icon">
+                <i class="fas fa-cloud-download-alt"></i>
+            </div>
+            <h1>Civil Engineering</h1>
+            <p>Access study materials from multiple Google Drive and OneDrive accounts shared by friends and classmates.</p>
+        </section>
+
+        <!-- Main Container -->
+        <div class="materials-container">
+            
+            <!-- Google Drive Section -->
+            <div class="cloud-storage-section">
+                <h2 class="section-title">
+                    <i class="fab fa-google-drive"></i>
+                    Google Drive Links
+                </h2>
+                
+                <div class="button-grid">
+                    <!-- Google Drive 1 -->
+                    <a href="https://drive.google.com/drive/folders/1Tr8qSw0aYpu6UQXcalnMEVCpRSCU-LbE?usp=drive_link" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active">empty</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 1</div>
+                        <div class="drive-title">Nabin's Drive</div>
+                        <div class="drive-subtitle">Complete notes collection</div>
+                    </a>
+
+                    <!-- Google Drive 2 -->
+                    <a href="https://drive.google.com/drive/folders/2XYZ789UVW012" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active">empty</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 2</div>
+                        <div class="drive-title">Dinesh's Drive</div>
+                        <div class="drive-subtitle">Past papers & solutions</div>
+                    </a>
+
+                    <!-- Google Drive 3 -->
+                    <a href="https://drive.google.com/drive/folders/3MNO345PQR678" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active">empty</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 3</div>
+                        <div class="drive-title">Bikram's Drive</div>
+                        <div class="drive-subtitle">Project reports & code</div>
+                    </a>
+
+                    <!-- Google Drive 4 -->
+                    <a href="https://drive.google.com/drive/folders/4STU901VWX234" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active">empty</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 4</div>
+                        <div class="drive-title">Suman's Drive</div>
+                        <div class="drive-subtitle">Lab manuals & practicals</div>
+                    </a>
+
+                    <!-- Google Drive 5 -->
+                    <a href="https://drive.google.com/drive/folders/5YZA567BCD890" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active">empty</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 5</div>
+                        <div class="drive-title">Class Group Drive</div>
+                        <div class="drive-subtitle">Shared class materials</div>
+                    </a>
+                </div>
+            </div>
+            <!-- Hero Section -->
+        <section class="materials-hero">
+            <div class="materials-icon">
+                <i class="fas fa-cloud-download-alt"></i>
+            </div>
+            <h1>bca</h1>
+            <p>Access study materials from multiple Google Drive and OneDrive accounts shared by friends and classmates.</p>
+        </section>
+
+        <!-- Main Container -->
+        <div class="materials-container">
+            
+            <!-- Google Drive Section -->
+            <div class="cloud-storage-section">
+                <h2 class="section-title">
+                    <i class="fab fa-google-drive"></i>
+                    Google Drive Links
+                </h2>
+                
+                <div class="button-grid">
+                    <!-- Google Drive 1 -->
+                    <a href="https://drive.google.com/drive/folders/1Tr8qSw0aYpu6UQXcalnMEVCpRSCU-LbE?usp=drive_link" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active">empty</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 1</div>
+                        <div class="drive-title">Nabin's Drive</div>
+                        <div class="drive-subtitle">Complete notes collection</div>
+                    </a>
+
+                    <!-- Google Drive 2 -->
+                    <a href="https://drive.google.com/drive/folders/2XYZ789UVW012" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active">empty</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 2</div>
+                        <div class="drive-title">Dinesh's Drive</div>
+                        <div class="drive-subtitle">Past papers & solutions</div>
+                    </a>
+
+                    <!-- Google Drive 3 -->
+                    <a href="https://drive.google.com/drive/folders/3MNO345PQR678" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active">empty</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 3</div>
+                        <div class="drive-title">Bikram's Drive</div>
+                        <div class="drive-subtitle">Project reports & code</div>
+                    </a>
+
+                    <!-- Google Drive 4 -->
+                    <a href="https://drive.google.com/drive/folders/4STU901VWX234" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active">empty</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 4</div>
+                        <div class="drive-title">Suman's Drive</div>
+                        <div class="drive-subtitle">Lab manuals & practicals</div>
+                    </a>
+
+                    <!-- Google Drive 5 -->
+                    <a href="https://drive.google.com/drive/folders/5YZA567BCD890" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active"></div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 5</div>
+                        <div class="drive-title">Class Group Drive</div>
+                        <div class="drive-subtitle">Shared class materials</div>
+                    </a>
+                </div>
+            </div>
+            <!-- Hero Section -->
+        <section class="materials-hero">
+            <div class="materials-icon">
+                <i class="fas fa-cloud-download-alt"></i>
+            </div>
+            <h1>BBA</h1>
+            <p>Access study materials from multiple Google Drive and OneDrive accounts shared by friends and classmates.</p>
+        </section>
+
+        <!-- Main Container -->
+        <div class="materials-container">
+            
+            <!-- Google Drive Section -->
+            <div class="cloud-storage-section">
+                <h2 class="section-title">
+                    <i class="fab fa-google-drive"></i>
+                    Google Drive Links
+                </h2>
+                
+                <div class="button-grid">
+                    <!-- Google Drive 1 -->
+                    <a href="https://drive.google.com/drive/folders/1Tr8qSw0aYpu6UQXcalnMEVCpRSCU-LbE?usp=drive_link" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active">Active</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 1</div>
+                        <div class="drive-title">Nabin's Drive</div>
+                        <div class="drive-subtitle">Complete notes collection</div>
+                    </a>
+
+                    <!-- Google Drive 2 -->
+                    <a href="https://drive.google.com/drive/folders/2XYZ789UVW012" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active">Active</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 2</div>
+                        <div class="drive-title">Dinesh's Drive</div>
+                        <div class="drive-subtitle">Past papers & solutions</div>
+                    </a>
+
+                    <!-- Google Drive 3 -->
+                    <a href="https://drive.google.com/drive/folders/3MNO345PQR678" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active">Active</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 3</div>
+                        <div class="drive-title">Bikram's Drive</div>
+                        <div class="drive-subtitle">Project reports & code</div>
+                    </a>
+
+                    <!-- Google Drive 4 -->
+                    <a href="https://drive.google.com/drive/folders/4STU901VWX234" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active">Active</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 4</div>
+                        <div class="drive-title">Suman's Drive</div>
+                        <div class="drive-subtitle">Lab manuals & practicals</div>
+                    </a>
+
+                    <!-- Google Drive 5 -->
+                    <a href="https://drive.google.com/drive/folders/5YZA567BCD890" target="_blank" class="drive-btn gdrive">
+                        <div class="status-badge active">Active</div>
+                        <div class="drive-icon">
+                            <i class="fab fa-google-drive"></i>
+                        </div>
+                        <div class="drive-number">GOOGLE DRIVE 5</div>
+                        <div class="drive-title">Class Group Drive</div>
+                        <div class="drive-subtitle">Shared class materials</div>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+            <!-- Info Section -->
+            <div class="info-section">
+                <h2>How to Use These Links</h2>
+                <p>All links are shared by students for educational purposes. Click any button to open the cloud storage in a new tab.</p>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3><i class="fas fa-check-circle" style="color: #34a853;"></i> Active Links</h3>
+                        <p>Green badges indicate currently active and accessible drives</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3><i class="fas fa-exclamation-triangle" style="color: #f44336;"></i> Full Drives</h3>
+                        <p>Red badges indicate storage is full or access might be limited</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3><i class="fas fa-share-alt" style="color: #4285f4;"></i> Shared Access</h3>
+                        <p>All drives are shared with view-only permission</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3><i class="fas fa-cloud-download-alt" style="color: #ff6b35;"></i> Download</h3>
+                        <p>You can download files directly from these drives</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="profile-log">
+                    <img src="logo.png" alt="Pokhara University Notes Logo" class="logo">
+                    <div><a href="index.html" class="tittle">Pokhara University Notes</a></div>
+                </div>
+                <p>Your trusted platform for notes and other study materials for Pokhara University</p>
+                <p class="copyright">© 2024 Pokhara University Notes. All rights reserved.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="onedrive.html">Drive</a></li>
+                    <li><a href="index.html#review">Reviews</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> +977 9840295924</p>
+                <p><i class="fas fa-envelope"></i> yagyarawal771@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Pokhara, Nepal</p>
+                <div class="footer-social">
+                    <a href="https://wa.me/9779840295924" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>This unofficial platform made from Student of Pokhara University. All materials are for educational purposes only.</p>
+            <p style="margin-top: 10px; font-size: 0.9rem; color: #888;">
+                All links are shared by students. Replace placeholder links with actual Google Drive/OneDrive URLs.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Add click animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const driveButtons = document.querySelectorAll('.drive-btn');
+            
+            driveButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    // Add click effect
+                    this.style.transform = 'scale(0.95)';
+                    
+                    // Show loading message
+                    const title = this.querySelector('.drive-title').textContent;
+                    console.log(`Opening: ${title}`);
+                    
+                    // Reset animation after click
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 200);
+                });
+                
+                // Add hover title
+                const title = button.querySelector('.drive-title').textContent;
+                const number = button.querySelector('.drive-number').textContent;
+                button.title = `Click to open ${number} - ${title}`;
+            });
+        });
+    </script>
+</body>
+</html>
