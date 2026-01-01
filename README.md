@@ -1,1 +1,0 @@
-# Notes Pokhara University 
